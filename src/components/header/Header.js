@@ -1,10 +1,9 @@
-import Footer from "../footer/Footer";
 
 function Header(props){
     return(
         <>
-            <h1>This is a header</h1>
-            <Footer />
+             <h1>Travel Destination</h1>
+            <p>Travel destinations of the most visited cities around the world</p>
         </>
     );
 }
