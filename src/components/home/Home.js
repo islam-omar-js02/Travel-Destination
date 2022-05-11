@@ -6,7 +6,8 @@ function Home(props){
     return(
         <>
             <Header />
-            <Tours />
+            //task 17
+            <Tours data={props.data}/> 
             <Footer />
         </>
     );

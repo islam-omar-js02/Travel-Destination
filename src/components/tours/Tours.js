@@ -1,22 +1,37 @@
 
-import data from '../../data/db.json'
+// 
 
-function Tours(props){
+
+
+//17
+
+
+
+import Tour from './tour/Tour';
+import { Link } from 'react-router-dom';
+
+
+
+function Tours(props) {
+ //taking data from props  from home 
     return (
         <>
-          {
-            data.map(element=>{
-              return(
-                <div>
-                    <h3> {element.name} </h3>
-                    <br></br>
-                    <img src={element.image} alt="Picture"/>
-                </div>
-              );
-            })
-          }
+            {
+                props.data.map(value => {
+
+                    return (
+
+                        <Link to={`/city/${value.id}`}>
+
+                            <Tour key={value.id} city={value} />
+
+                        </Link>
+
+                    );
+                })
+            }
         </>
-      );
+    )
 }
 
 export default Tours;

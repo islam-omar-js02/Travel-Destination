@@ -1,0 +1,14 @@
+.Details{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.price{
+    color: red;
+}
+
+.btn{
+    background-color: darkgrey;
+    color: #000;
+    border-radius: 10%;
+    border-bottom: 10px;
+}
