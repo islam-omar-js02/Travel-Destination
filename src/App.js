@@ -15,7 +15,7 @@ import Home from "./components/home/Home";
 import TourDetails from "./components/TourDetails/TourDetails"
 import { Routes, Route } from "react-router-dom";
 
-import data from "./data/data.json"
+import data from "./data/db.json"
 
 
 function App() {

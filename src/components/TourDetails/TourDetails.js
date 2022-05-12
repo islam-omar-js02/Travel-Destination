@@ -1,3 +1,10 @@
+// New
+import React, { useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
+//
+
 function TourDetails(props) {
 
     const [showMore, setShowMore] = useState(false);
@@ -5,6 +12,7 @@ function TourDetails(props) {
     let { id } = useParams();
 
     let dataFilter = props.data.filter(element => element.id === id);
+    console.log(dataFilter);
 
     return (
 
